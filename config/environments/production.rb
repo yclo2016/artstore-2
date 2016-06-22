@@ -81,5 +81,5 @@ Rails.application.configure do
     Pay2go.integration_mode = :development
   end
 
-  config.actin_mailer.default_url_options = { host: 'protected-escarpment-90342.herokuapp.com'} # 你的heroku app網址
+  config.action_mailer.default_url_options = { host: 'protected-escarpment-90342.herokuapp.com'} # 你的heroku app網址
 end
