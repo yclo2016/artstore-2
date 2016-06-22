@@ -78,6 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.after_initialize do
-    Pay2go.integration_mode = :production
+    Pay2go.integration_mode = :development
   end
+
+  config.actin_mailer.default_url_options = { host: 'protected-escarpment-90342.herokuapp.com'} # 你的heroku app網址
 end
